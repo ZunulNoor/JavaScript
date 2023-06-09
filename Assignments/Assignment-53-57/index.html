@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <br><br><br>
+  <div class="image-gallery">
+    <img src="./house1.webp" onclick="openModal('./house1.webp')" alt="Image 1">
+    <img src="./House2.jpg" onclick="openModal('./House2.jpg')" alt="Image 2">
+    <img src="./house3.jpeg" onclick="openModal('./house3.jpeg')" alt="Image 3">
+    <img src="./house4.jpg"onclick="openModal('./house4.jpg')" alt="Image 4">
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="">
+    </div>
+  </div>
+  <!-- <br><br><br> -->
+  <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  <button id="zoomin">zoom in</button>
+  <button id="zoomout">zoom out</button>
+  <script src="app.js"></script>
+</body>
+</html>
